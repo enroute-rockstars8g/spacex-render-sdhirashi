@@ -1,14 +1,13 @@
 
 //GET requests
-//Launches, missions, rockets -optional company
+//Launches, rockets
 
 export const getLaunches = async () => {
 
     try {
-        const response= await fetch(`https://api.spacex.land/rest/launches`);
+        const response= await fetch(`https://api.spacexdata.com/v4/launches/`);
         if (response.status!==200) return;
 
-        //Agarra lo del servidor y retorna el json, retorna una promesa
         const launch = await response.json();
         return launch;
     }catch(e){
@@ -16,3 +15,19 @@ export const getLaunches = async () => {
     }
 
 };
+
+export const getRockets = async () => {
+
+    try {
+        const response= await fetch(`https://api.spacexdata.com/v4/rockets/`);
+        if (response.status!==200) return;
+
+        const rocket = await response.json();
+        return rocket;
+    }catch(e){
+        console.error(e);
+    }
+
+};
+
+
