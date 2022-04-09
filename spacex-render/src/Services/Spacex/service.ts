@@ -1,6 +1,6 @@
 
 //GET requests
-//Launches, rockets
+//Launches, Rockets
 
 export const getLaunches = async () => {
 
