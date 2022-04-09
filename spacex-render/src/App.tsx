@@ -17,13 +17,13 @@ function App() {
   return (
     <div className="App">
 
-      <nav className="navbar navbar-dark">
+      <nav className="navbar navbar-dark ">
         <div className="container d-flex justify-content-center">
             <img src={logoimage} alt="" width="180" height="40"/>
         </div>
       </nav>
 
-      <div className="row">
+      <div className="row  animate__animated animate__fadeInUp">
       <img className="img-responsive" src={headerimage} alt="" />
       </div>
       <br />
